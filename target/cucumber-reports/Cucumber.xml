@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="207.217" tests="18" skipped="0" failures="5" errors="0">
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting age group" time="11.335">
+<testsuite name="Cucumber" time="204.232" tests="18" skipped="0" failures="5" errors="0">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting age group" time="10.422">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -10,7 +10,7 @@ And the user does not select any age group..................................pass
 Then an error message for age group should be displayed.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting book format" time="11.479">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting book format" time="9.323">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -19,7 +19,7 @@ And selects age group as "Adult"............................................pass
 Then an error message for book format should be displayed...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Validate author name with valid input" time="12.685">
+<testcase classname="Advanced Search Functionality" name="Validate author name with valid input" time="10.045">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -29,7 +29,7 @@ And selects age group as "Adult"............................................pass
 Then books related to author should be listed...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without entering author name" time="10.645">
+<testcase classname="Advanced Search Functionality" name="Submit form without entering author name" time="11.193">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user leaves author name blank......................................passed
@@ -40,7 +40,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for author name should be displayed...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without entering subject" time="11.07">
+<testcase classname="Advanced Search Functionality" name="Submit form without entering subject" time="11.192">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and leaves subject blank..passed
@@ -50,7 +50,7 @@ And selects age group as "Adult"............................................pass
 Then an error message for subject should be displayed.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting edition" time="12.518">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting edition" time="11.926">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -59,7 +59,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for edition should be displayed.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form with space in author name" time="6.688">
+<testcase classname="Advanced Search Functionality" name="Submit form with space in author name" time="6.98">
 <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with text: Edition 1
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
@@ -85,7 +85,7 @@ And selects age group as "Adult"............................................skip
 Then an error message for author name should be displayed...................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form with space in subject" time="8.916">
+<testcase classname="Advanced Search Functionality" name="Submit form with space in subject" time="7.795">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at stepDefinition.AdvancedSearchSteps.error_for_subject(AdvancedSearchSteps.java:89)
@@ -101,7 +101,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for subject should be displayed.......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate only one option selection in service page" time="8.82">
+<testcase classname="Contact and Query resolving services" name="Validate only one option selection in service page" time="7.476">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Email" option............................................passed
@@ -110,7 +110,7 @@ And I select the "Chat" option..............................................pass
 Then Only one option should remain selected.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with valid email id" time="12.39">
+<testcase classname="Contact and Query resolving services" name="Validate Email option with valid email id" time="13.076">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Email" option............................................passed
@@ -120,7 +120,7 @@ And I click the submit button...............................................pass
 Then I should see a successful email validation message.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with invalid email id" time="12.117">
+<testcase classname="Contact and Query resolving services" name="Validate Email option with invalid email id" time="11.249">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid email message not displayed]&gt; but was:&lt;[Mail Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid email message not displayed]> but was:<[Mail Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -138,7 +138,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid email........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with blank email id" time="12.082">
+<testcase classname="Contact and Query resolving services" name="Validate Email option with blank email id" time="12.423">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Email" option............................................passed
@@ -148,7 +148,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for blank email..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid phone number" time="12.33">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid phone number" time="13.043">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -159,7 +159,7 @@ And I click the submit button...............................................pass
 Then I should see a successful phone validation message.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid phone number" time="12.779">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid phone number" time="12.914">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid phone message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid phone message not displayed]> but was:<[Message Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -178,7 +178,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid phone........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank phone number" time="12.362">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank phone number" time="12.945">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -189,7 +189,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for blank phone number...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid name" time="12.801">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid name" time="14.733">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -200,7 +200,7 @@ And I click the submit button...............................................pass
 Then I should see a successful name validation message......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid name" time="12.823">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid name" time="13.098">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid name message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid name message not displayed]> but was:<[Message Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -219,7 +219,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid name.........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank name" time="12.776">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank name" time="13.833">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
