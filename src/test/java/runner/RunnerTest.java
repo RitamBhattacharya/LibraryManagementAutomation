@@ -8,7 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 		glue = { "stepDefinition", "hooks", "driver" }, // package containing step definitions
 		plugin = { "pretty", "junit:target/cucumber-reports/Cucumber.xml",
 				"html:target/cucumber-reports/html-report.html",
-				"json:target/cucumber-reports/report.json" },
+				"json:target/cucumber-reports/report.json" ,
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				}, monochrome = true,
 		tags = "(@BookSearch or @LibraryCard or @ServiceQuery ) and (not @ignore)" 
 																																			// filtering
 )

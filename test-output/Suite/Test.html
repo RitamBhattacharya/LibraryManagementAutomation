@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 30 12:20:46 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>320 seconds (320088 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with invalid name", "Contact and Query resolving services"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid name message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidNameMessage(ServiceSteps.java:107)
+	at ✽.I should see an error message for invalid name(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace810425934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace810425934'><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid name message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidNameMessage(ServiceSteps.java:107)
+	at ✽.I should see an error message for invalid name(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:81)
+</pre></div></td>
+<td>11</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter an incorrect age", "Validate the Get a Library Card form fields"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid age
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid age&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:56)
+</pre></div><a href='#' onClick='toggleBox("stack-trace716724378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace716724378'><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid age
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid age&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:56)
+</pre></div></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with space in author name", "Advanced Search Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Edition 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pages.AdvancedSearchActions.selectEdition(AdvancedSearchActions.java:35)
+	at stepDefinition.AdvancedSearchSteps.user_selects_edition(AdvancedSearchSteps.java:30)
+	at ✽.selects edition as &quot;Edition 1&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/advancedSearch.feature:54)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1623148876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1623148876'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Edition 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pages.AdvancedSearchActions.selectEdition(AdvancedSearchActions.java:35)
+	at stepDefinition.AdvancedSearchSteps.user_selects_edition(AdvancedSearchSteps.java:30)
+	at ✽.selects edition as &quot;Edition 1&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/advancedSearch.feature:54)
+</pre></div></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter an invalid email", "Validate the Get a Library Card form fields"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid email
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid email&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1879190852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1879190852'><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid email
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid email&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:81)
+</pre></div></td>
+<td>10</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Email option with invalid email id", "Contact and Query resolving services"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid email message not displayed]&gt; but was:&lt;[Mail Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidEmailMessage(ServiceSteps.java:77)
+	at ✽.I should see an error message for invalid email(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace867351077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace867351077'><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid email message not displayed]&gt; but was:&lt;[Mail Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidEmailMessage(ServiceSteps.java:77)
+	at ✽.I should see an error message for invalid email(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:28)
+</pre></div></td>
+<td>13</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form with space in subject", "Advanced Search Functionality"</td>
+<td><div><pre>java.lang.AssertionError
+	at stepDefinition.AdvancedSearchSteps.error_for_subject(AdvancedSearchSteps.java:89)
+	at ✽.an error message for subject should be displayed(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/advancedSearch.feature:65)
+</pre></div><a href='#' onClick='toggleBox("stack-trace394840929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394840929'><pre>java.lang.AssertionError
+	at stepDefinition.AdvancedSearchSteps.error_for_subject(AdvancedSearchSteps.java:89)
+	at ✽.an error message for subject should be displayed(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/advancedSearch.feature:65)
+</pre></div></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with invalid phone number", "Contact and Query resolving services"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid phone message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidPhoneMessage(ServiceSteps.java:92)
+	at ✽.I should see an error message for invalid phone(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:54)
+</pre></div><a href='#' onClick='toggleBox("stack-trace92699135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace92699135'><pre>org.junit.ComparisonFailure: expected:&lt;[Invalid phone message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.ServiceSteps.verifyInvalidPhoneMessage(ServiceSteps.java:92)
+	at ✽.I should see an error message for invalid phone(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/servicePage.feature:54)
+</pre></div></td>
+<td>12</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter an invalid phone number", "Validate the Get a Library Card form fields"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid phone number
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid phone number&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:94)
+</pre></div><a href='#' onClick='toggleBox("stack-trace608486367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608486367'><pre>java.lang.AssertionError: Expected error message not displayed: Please enter a valid phone number
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please enter a valid phone number&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:94)
+</pre></div></td>
+<td>16</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Leave the first name blank", "Validate the Get a Library Card form fields"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message not displayed: Please Enter first name
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please Enter first name&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace26101073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26101073'><pre>java.lang.AssertionError: Expected error message not displayed: Please Enter first name
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying &quot;Please Enter first name&quot;(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:43)
+</pre></div></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form without selecting age group", "Advanced Search Functionality"</td>
+<td></td>
+<td>10</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with blank name", "Contact and Query resolving services"</td>
+<td></td>
+<td>12</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with valid phone number", "Contact and Query resolving services"</td>
+<td></td>
+<td>12</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Leave the phone number field blank", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate author name with valid input", "Advanced Search Functionality"</td>
+<td></td>
+<td>11</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate only one option selection in service page", "Contact and Query resolving services"</td>
+<td></td>
+<td>6</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter an invalid first name", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>9</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with blank phone number", "Contact and Query resolving services"</td>
+<td></td>
+<td>12</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter an invalid last name", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>8</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form without entering author name", "Advanced Search Functionality"</td>
+<td></td>
+<td>11</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form without entering subject", "Advanced Search Functionality"</td>
+<td></td>
+<td>13</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form without selecting book format", "Advanced Search Functionality"</td>
+<td></td>
+<td>10</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Leave the age field blank", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>9</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit the form with all valid data", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>9</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Email option with blank email id", "Contact and Query resolving services"</td>
+<td></td>
+<td>11</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Card not selected", "Validate the Get a Library Card form fields"</td>
+<td></td>
+<td>18</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit form without selecting edition", "Advanced Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Chat section with valid name", "Contact and Query resolving services"</td>
+<td></td>
+<td>14</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+<tr>
+<td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Email option with valid email id", "Contact and Query resolving services"</td>
+<td></td>
+<td>14</td>
+<td>runner.RunnerTest@6f46426d</td></tr>
+</table><p>
+</body>
+</html>

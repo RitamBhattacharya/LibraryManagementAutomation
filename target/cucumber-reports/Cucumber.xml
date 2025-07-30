@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="280.944" tests="27" skipped="0" failures="12" errors="0">
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting age group" time="10.076">
+<testsuite name="Cucumber" time="318.068" tests="28" skipped="0" failures="9" errors="0">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting age group" time="10.605">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -10,7 +10,7 @@ And the user does not select any age group..................................pass
 Then an error message for age group should be displayed.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting book format" time="12.096">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting book format" time="10.062">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -19,7 +19,7 @@ And selects age group as "Adult"............................................pass
 Then an error message for book format should be displayed...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Validate author name with valid input" time="12.966">
+<testcase classname="Advanced Search Functionality" name="Validate author name with valid input" time="11.333">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -29,7 +29,7 @@ And selects age group as "Adult"............................................pass
 Then books related to author should be listed...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without entering author name" time="11.763">
+<testcase classname="Advanced Search Functionality" name="Submit form without entering author name" time="11.103">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user leaves author name blank......................................passed
@@ -40,7 +40,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for author name should be displayed...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without entering subject" time="12.795">
+<testcase classname="Advanced Search Functionality" name="Submit form without entering subject" time="13.079">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and leaves subject blank..passed
@@ -50,7 +50,7 @@ And selects age group as "Adult"............................................pass
 Then an error message for subject should be displayed.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form without selecting edition" time="12.826">
+<testcase classname="Advanced Search Functionality" name="Submit form without selecting edition" time="14.267">
 <system-out><![CDATA[
 Given the user is on the Advanced Search page...............................passed
 When the user enters author name as "Philip Roth" and subject as "fiction"..passed
@@ -59,7 +59,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for edition should be displayed.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form with space in author name" time="9.015">
+<testcase classname="Advanced Search Functionality" name="Submit form with space in author name" time="8.808">
 <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with text: Edition 1
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
@@ -85,7 +85,7 @@ And selects age group as "Adult"............................................skip
 Then an error message for author name should be displayed...................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Advanced Search Functionality" name="Submit form with space in subject" time="8.162">
+<testcase classname="Advanced Search Functionality" name="Submit form with space in subject" time="8.142">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at stepDefinition.AdvancedSearchSteps.error_for_subject(AdvancedSearchSteps.java:89)
@@ -101,7 +101,7 @@ And selects age group as "Teen".............................................pass
 Then an error message for subject should be displayed.......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid first name" time="9.773">
+<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid first name" time="9.643">
 <system-out><![CDATA[
 Given the user is on the Get a Library Card form page.......................passed
 When the user enters "1234" as the first name...............................passed
@@ -116,7 +116,7 @@ And submits the form........................................................pass
 Then no error message should appear for the first name......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid last name" time="8.29">
+<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid last name" time="8.507">
 <system-out><![CDATA[
 Given the user is on the Get a Library Card form page.......................passed
 When the user enters "John" as the first name...............................passed
@@ -131,13 +131,13 @@ And submits the form........................................................pass
 Then no error message should appear for the last name.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Leave the first name blank" time="14.24">
+<testcase classname="Validate the Get a Library Card form fields" name="Leave the first name blank" time="8.406">
 <failure type="java.lang.AssertionError" message="Expected error message not displayed: Please Enter first name">
 <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please Enter first name
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please Enter first name"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:41)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying "Please Enter first name"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:43)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -154,13 +154,13 @@ And submits the form........................................................pass
 Then an error message should appear saying "Please Enter first name"........failed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Enter an incorrect age" time="6.013">
+<testcase classname="Validate the Get a Library Card form fields" name="Enter an incorrect age" time="8.529">
 <failure type="java.lang.AssertionError" message="Expected error message not displayed: Please enter a valid age">
 <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid age
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please enter a valid age"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:53)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying "Please enter a valid age"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:56)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -177,15 +177,7 @@ And submits the form........................................................pass
 Then an error message should appear saying "Please enter a valid age".......failed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Leave the age field blank" time="6.193">
-<failure type="java.lang.AssertionError" message="Expected error message not displayed: Please enter the age">
-<![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter the age
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please enter the age"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:65)
-]]>
-</failure>
+<testcase classname="Validate the Get a Library Card form fields" name="Leave the age field blank" time="9.016">
 <system-out><![CDATA[
 Given the user is on the Get a Library Card form page.......................passed
 When the user enters "John" as the first name...............................passed
@@ -197,16 +189,16 @@ And selects "Student" as the occupation.....................................pass
 And enters "Greenwood High" as the school name..............................passed
 And selects "Apply New Card" as the action..................................passed
 And submits the form........................................................passed
-Then an error message should appear saying "Please enter the age"...........failed
+Then an error message should appear saying "Please enter the age"...........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid email" time="7.859">
+<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid email" time="10.276">
 <failure type="java.lang.AssertionError" message="Expected error message not displayed: Please enter a valid email">
 <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid email
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please enter a valid email"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:77)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying "Please enter a valid email"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:81)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -223,13 +215,13 @@ And submits the form........................................................pass
 Then an error message should appear saying "Please enter a valid email".....failed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid phone number" time="7.014">
+<testcase classname="Validate the Get a Library Card form fields" name="Enter an invalid phone number" time="16.498">
 <failure type="java.lang.AssertionError" message="Expected error message not displayed: Please enter a valid phone number">
 <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid phone number
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please enter a valid phone number"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:89)
+	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:103)
+	at ✽.an error message should appear saying "Please enter a valid phone number"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:94)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -246,15 +238,7 @@ And submits the form........................................................pass
 Then an error message should appear saying "Please enter a valid phone number".failed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Leave the phone number field blank" time="7.613">
-<failure type="java.lang.AssertionError" message="Expected error message not displayed: Please Enter the phone">
-<![CDATA[java.lang.AssertionError: Expected error message not displayed: Please Enter the phone
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
-	at ✽.an error message should appear saying "Please Enter the phone"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:101)
-]]>
-</failure>
+<testcase classname="Validate the Get a Library Card form fields" name="Leave the phone number field blank" time="8.876">
 <system-out><![CDATA[
 Given the user is on the Get a Library Card form page.......................passed
 When the user enters "John" as the first name...............................passed
@@ -266,10 +250,10 @@ And selects "Student" as the occupation.....................................pass
 And enters "Greenwood High" as the school name..............................passed
 And selects "Apply New Card" as the action..................................passed
 And submits the form........................................................passed
-Then an error message should appear saying "Please Enter the phone".........failed
+Then an error message should appear saying "Please Enter the phone".........passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the Get a Library Card form fields" name="Submit the form with all valid data" time="13.326">
+<testcase classname="Validate the Get a Library Card form fields" name="Submit the form with all valid data" time="9.057">
 <system-out><![CDATA[
 Given the user is on the Get a Library Card form page.......................passed
 When the user enters "John" as the first name...............................passed
@@ -284,96 +268,31 @@ And submits the form........................................................pass
 Then the browser should close...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate only one option selection in service page" time="5.887">
-<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepDefinition.ServiceSteps">
-<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepDefinition.ServiceSteps
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
-	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
-	... 43 more
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
-Host info: host: 'RITAM-BHATTACHA', ip: '192.168.0.103'
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 3}}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-	at driver.DriverSetup.getWebDriver(DriverSetup.java:16)
-	at pages.ServicePage.<init>(ServicePage.java:16)
-	at stepDefinition.ServiceSteps.<init>(ServiceSteps.java:8)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	... 46 more
-]]>
-</failure>
+<testcase classname="Validate the Get a Library Card form fields" name="Card not selected" time="18.352">
 <system-out><![CDATA[
-Given I open the site and navigate to the Services page.....................failed
-When I select the "Email" option............................................skipped
-And I select the "Call" option..............................................skipped
-And I select the "Chat" option..............................................skipped
-Then Only one option should remain selected.................................skipped
+Given the user is on the Get a Library Card form page.......................passed
+When the user enters "Alice" as the first name..............................passed
+And enters "Smith" as the last name.........................................passed
+And enters "30" as the age..................................................passed
+And enters "alice.smith@example.com" as the email...........................passed
+And enters "9876543210" as the phone number.................................passed
+And selects "Student" as the occupation.....................................passed
+And enters "XYZ Institute" as the school name...............................passed
+And submits the form........................................................passed
+Then an error message should appear saying "Please Select the card".........passed
+And the browser should close................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with valid email id" time="11.449">
+<testcase classname="Contact and Query resolving services" name="Validate only one option selection in service page" time="6.77">
+<system-out><![CDATA[
+Given I open the site and navigate to the Services page.....................passed
+When I select the "Email" option............................................passed
+And I select the "Call" option..............................................passed
+And I select the "Chat" option..............................................passed
+Then Only one option should remain selected.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact and Query resolving services" name="Validate Email option with valid email id" time="14.114">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Email" option............................................passed
@@ -383,7 +302,7 @@ And I click the submit button...............................................pass
 Then I should see a successful email validation message.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with invalid email id" time="10.769">
+<testcase classname="Contact and Query resolving services" name="Validate Email option with invalid email id" time="13.632">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid email message not displayed]&gt; but was:&lt;[Mail Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid email message not displayed]> but was:<[Mail Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -401,7 +320,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid email........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Email option with blank email id" time="11.232">
+<testcase classname="Contact and Query resolving services" name="Validate Email option with blank email id" time="11.877">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Email" option............................................passed
@@ -411,7 +330,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for blank email..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid phone number" time="11.046">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid phone number" time="12.203">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -422,7 +341,7 @@ And I click the submit button...............................................pass
 Then I should see a successful phone validation message.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid phone number" time="12.531">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid phone number" time="12.909">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid phone message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid phone message not displayed]> but was:<[Message Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -441,7 +360,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid phone........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank phone number" time="11.126">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank phone number" time="12.557">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -452,7 +371,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for blank phone number...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid name" time="11.637">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with valid name" time="14.594">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed
@@ -463,7 +382,7 @@ And I click the submit button...............................................pass
 Then I should see a successful name validation message......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid name" time="11.98">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with invalid name" time="11.986">
 <failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid name message not displayed]&gt; but was:&lt;[Message Sent Successfully]&gt;">
 <![CDATA[org.junit.ComparisonFailure: expected:<[Invalid name message not displayed]> but was:<[Message Sent Successfully]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
@@ -482,7 +401,7 @@ And I click the submit button...............................................pass
 Then I should see an error message for invalid name.........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank name" time="12.573">
+<testcase classname="Contact and Query resolving services" name="Validate Chat section with blank name" time="12.181">
 <system-out><![CDATA[
 Given I open the site and navigate to the Services page.....................passed
 When I select the "Chat" option.............................................passed

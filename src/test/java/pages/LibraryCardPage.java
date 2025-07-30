@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -82,4 +84,25 @@ public class LibraryCardPage {
     public boolean isErrorMessagePresent(String expectedMessage) {
         return driver.getPageSource().contains(expectedMessage);
     }
+    public void selectCard(String cardType) {
+        Select cardDropdown = new Select(driver.findElement(By.id("action")));
+
+        if (cardType == null || cardType.trim().isEmpty() || cardType.equalsIgnoreCase("Select")) {
+            // Select the default invalid option
+            cardDropdown.selectByVisibleText("Select"); // 
+        } else {
+            cardDropdown.selectByVisibleText(cardType);
+        }
+    }
+    public boolean isErrorMessageDisplayed(String expectedMessage) {
+        List<WebElement> errorLabels = driver.findElements(By.tagName("label"));
+        for (WebElement label : errorLabels) {
+            if (label.isDisplayed() && label.getText().trim().equalsIgnoreCase(expectedMessage.trim())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    
 }

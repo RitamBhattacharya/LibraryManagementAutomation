@@ -1,9 +1,10 @@
 @LibraryCard
 Feature: Validate the Get a Library Card form fields
 
-  Background:
+  Background: 
     Given the user is on the Get a Library Card form page
 
+  @knownBug
   Scenario: Enter an invalid first name
     When the user enters "1234" as the first name
     And enters "Doe" as the last name
@@ -16,6 +17,7 @@ Feature: Validate the Get a Library Card form fields
     And submits the form
     Then no error message should appear for the first name
 
+  @knownBug
   Scenario: Enter an invalid last name
     When the user enters "John" as the first name
     And enters "99last" as the last name
@@ -40,6 +42,7 @@ Feature: Validate the Get a Library Card form fields
     And submits the form
     Then an error message should appear saying "Please Enter first name"
 
+  @knownBug
   Scenario: Enter an incorrect age
     When the user enters "John" as the first name
     And enters "Doe" as the last name
@@ -64,6 +67,7 @@ Feature: Validate the Get a Library Card form fields
     And submits the form
     Then an error message should appear saying "Please enter the age"
 
+  @knownBug
   Scenario: Enter an invalid email
     When the user enters "John" as the first name
     And enters "Doe" as the last name
@@ -76,6 +80,7 @@ Feature: Validate the Get a Library Card form fields
     And submits the form
     Then an error message should appear saying "Please enter a valid email"
 
+  @knownBug
   Scenario: Enter an invalid phone number
     When the user enters "John" as the first name
     And enters "Doe" as the last name
@@ -111,3 +116,16 @@ Feature: Validate the Get a Library Card form fields
     And selects "Apply New Card" as the action
     And submits the form
     Then the browser should close
+
+  Scenario: Card not selected
+    Given the user is on the Get a Library Card form page
+    When the user enters "Alice" as the first name
+    And enters "Smith" as the last name
+    And enters "30" as the age
+    And enters "alice.smith@example.com" as the email
+    And enters "9876543210" as the phone number
+    And selects "Student" as the occupation
+    And enters "XYZ Institute" as the school name
+    And submits the form
+    Then an error message should appear saying "Please Select the card"
+    And the browser should close

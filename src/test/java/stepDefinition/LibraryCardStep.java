@@ -3,8 +3,7 @@ package stepDefinition;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import driver.DriverSetup;
 import pages.LibraryCardPage;
@@ -76,6 +75,12 @@ public class LibraryCardStep {
     public void leaves_the_phone_number_field_blank() {
         libraryCardPage.clearPhone();
     }
+    
+    @When("the user does not select any card")
+    public void the_user_does_not_select_any_card() {
+        libraryCardPage.selectCard("Select"); // Select the default/placeholder option
+    }
+
 
     @When("submits the form")
     public void submits_the_form() {
@@ -93,12 +98,12 @@ public class LibraryCardStep {
         Assert.assertFalse("Unexpected error message appeared for last name",
             libraryCardPage.isErrorMessagePresent("Please Enter last name"));
     }
-
     @Then("an error message should appear saying {string}")
     public void an_error_message_should_appear_saying(String expectedMessage) {
         Assert.assertTrue("Expected error message not displayed: " + expectedMessage,
-            libraryCardPage.isErrorMessagePresent(expectedMessage));
+            libraryCardPage.isErrorMessageDisplayed(expectedMessage));
     }
+
 
 
     @Then("the browser should close")
