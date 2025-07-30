@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="13" failed="5" skipped="0">
+<testng-results ignored="0" total="27" passed="15" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T08:53:13 IST" name="Default suite" finished-at="2025-07-30T08:56:55 IST" duration-ms="222551">
+  <suite started-at="2025-07-30T09:27:40 IST" name="Default suite" finished-at="2025-07-30T09:32:22 IST" duration-ms="281837">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-30T08:53:13 IST" name="Default test" finished-at="2025-07-30T08:56:55 IST" duration-ms="222551">
+    <test started-at="2025-07-30T09:27:40 IST" name="Default test" finished-at="2025-07-30T09:32:22 IST" duration-ms="281837">
       <class name="runner.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:53:13 IST" name="setUpClass" finished-at="2025-07-30T08:53:13 IST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:27:40 IST" name="setUpClass" finished-at="2025-07-30T09:27:41 IST" duration-ms="594" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@55053f81]]>
+                <![CDATA[org.testng.TestRunner@6e78177b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:53:24 IST" duration-ms="10726" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:27:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:27:51 IST" duration-ms="10177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:53:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:53:37 IST" duration-ms="12618" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:27:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:28:03 IST" duration-ms="12117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:53:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:53:48 IST" duration-ms="11835" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:28:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:28:16 IST" duration-ms="13001" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:53:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:00 IST" duration-ms="11281" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:28:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:28:28 IST" duration-ms="11782" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:12 IST" duration-ms="11913" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:28:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:28:41 IST" duration-ms="12809" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:23 IST" duration-ms="11118" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:28:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:28:54 IST" duration-ms="12842" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:29 IST" duration-ms="6611" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:28:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:03 IST" duration-ms="9034" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@ at ✽.selects edition as "Edition 1"(file:///C:/WorkSpaces/Sprint2/sprint2/Libr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:38 IST" duration-ms="8778" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:11 IST" duration-ms="8185" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,229 @@ at ✽.an error message for subject should be displayed(file:///C:/WorkSpaces/Sp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:54:47 IST" duration-ms="8612" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:21 IST" duration-ms="9795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter an invalid first name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:29 IST" duration-ms="8308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter an invalid last name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:43 IST" duration-ms="14330" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Leave the first name blank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please Enter first name]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please Enter first name
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please Enter first name"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:49 IST" duration-ms="6019" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter an incorrect age"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please enter a valid age]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid age
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please enter a valid age"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:29:55 IST" duration-ms="6201" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Leave the age field blank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please enter the age]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter the age
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please enter the age"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:65)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:29:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:03 IST" duration-ms="7868" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter an invalid email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please enter a valid email]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid email
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please enter a valid email"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:10 IST" duration-ms="7022" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter an invalid phone number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please enter a valid phone number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please enter a valid phone number
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please enter a valid phone number"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:89)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:18 IST" duration-ms="7620" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Leave the phone number field blank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message not displayed: Please Enter the phone]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message not displayed: Please Enter the phone
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at stepDefinition.LibraryCardStep.an_error_message_should_appear_saying(LibraryCardStep.java:99)
+at ✽.an error message should appear saying "Please Enter the phone"(file:///C:/WorkSpaces/Sprint2/sprint2/LibraryManagement/src/test/java/features/libraryCard.feature:101)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:31 IST" duration-ms="13337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit the form with all valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the Get a Library Card form fields"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:37 IST" duration-ms="5896" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -191,10 +413,95 @@ at ✽.an error message for subject should be displayed(file:///C:/WorkSpaces/Sp
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.core.exception.CucumberException">
+            <message>
+              <![CDATA[Failed to instantiate class stepDefinition.ServiceSteps]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepDefinition.ServiceSteps
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+... 43 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'RITAM-BHATTACHA', ip: '192.168.0.103'
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 3}}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at driver.DriverSetup.getWebDriver(DriverSetup.java:16)
+at pages.ServicePage.<init>(ServicePage.java:16)
+at stepDefinition.ServiceSteps.<init>(ServiceSteps.java:8)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+... 46 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.exception.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:54:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:55:00 IST" duration-ms="13591" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:49 IST" duration-ms="11458" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,7 +517,7 @@ at ✽.an error message for subject should be displayed(file:///C:/WorkSpaces/Sp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:55:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:55:14 IST" duration-ms="13521" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:30:59 IST" duration-ms="10772" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -239,7 +546,7 @@ at ✽.I should see an error message for invalid email(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:55:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:55:28 IST" duration-ms="13960" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:30:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:31:11 IST" duration-ms="11239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,7 +562,7 @@ at ✽.I should see an error message for invalid email(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:55:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:55:41 IST" duration-ms="13565" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:31:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:31:22 IST" duration-ms="11049" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -271,7 +578,7 @@ at ✽.I should see an error message for invalid email(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:55:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:55:55 IST" duration-ms="13827" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:31:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:31:34 IST" duration-ms="12536" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -300,7 +607,7 @@ at ✽.I should see an error message for invalid phone(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:55:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:56:09 IST" duration-ms="13435" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:31:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:31:45 IST" duration-ms="11129" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -316,7 +623,7 @@ at ✽.I should see an error message for invalid phone(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:56:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:56:23 IST" duration-ms="14219" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:31:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:31:57 IST" duration-ms="11640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -332,7 +639,7 @@ at ✽.I should see an error message for invalid phone(file:///C:/WorkSpaces/Spr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:56:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:56:39 IST" duration-ms="16075" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:31:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:32:09 IST" duration-ms="11984" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -361,7 +668,7 @@ at ✽.I should see an error message for invalid name(file:///C:/WorkSpaces/Spri
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:56:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T08:56:55 IST" duration-ms="15789" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:32:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T09:32:22 IST" duration-ms="12577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -377,7 +684,7 @@ at ✽.I should see an error message for invalid name(file:///C:/WorkSpaces/Spri
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T08:56:55 IST" name="tearDownClass" finished-at="2025-07-30T08:56:55 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunnerTest@49912c99]" started-at="2025-07-30T09:32:22 IST" name="tearDownClass" finished-at="2025-07-30T09:32:22 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
